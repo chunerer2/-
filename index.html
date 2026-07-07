@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人信息填写</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="form-card" aria-labelledby="form-title">
+        <header class="form-header">
+          <h1 id="form-title">个人信息填写</h1>
+        </header>
+
+        <form class="profile-form">
+          <label class="field required">
+            <span>姓名</span>
+            <input type="text" name="name" value="林予安" autocomplete="name" />
+          </label>
+
+          <div class="gender-field required" role="group" aria-labelledby="genderLabel" aria-describedby="genderError">
+            <span class="gender-label" id="genderLabel">性别</span>
+            <div class="gender-options" role="radiogroup" aria-label="性别">
+              <label class="gender-option">
+                <input type="radio" name="gender" value="男" />
+                <span class="radio-dot" aria-hidden="true"></span>
+                <strong>男</strong>
+              </label>
+              <label class="gender-option">
+                <input type="radio" name="gender" value="女" />
+                <span class="radio-dot" aria-hidden="true"></span>
+                <strong>女</strong>
+              </label>
+            </div>
+            <p class="field-error" id="genderError" role="status" aria-live="polite"></p>
+          </div>
+
+          <label class="field required">
+            <span>证件类型</span>
+            <select name="idType">
+              <option>居民身份证</option>
+              <option>港澳居民居住证</option>
+              <option>台湾居民居住证</option>
+              <option>护照</option>
+            </select>
+          </label>
+
+          <label class="field required">
+            <span>证件号码</span>
+            <input type="text" name="idNo" value="110101199602142418" inputmode="numeric" />
+          </label>
+
+          <label class="field">
+            <span>居住城市</span>
+            <select id="citySelect" name="city">
+              <option>北京市昌平区回龙观街道</option>
+              <option>北京市昌平区天通苑北街道</option>
+              <option>北京市昌平区天通苑南街道</option>
+              <option>北京市昌平区霍营街道</option>
+              <option>北京市昌平区城北街道</option>
+              <option>北京市昌平区城南街道</option>
+              <option>北京市昌平区南口镇</option>
+              <option>北京市昌平区沙河镇</option>
+              <option>北京市昌平区小汤山镇</option>
+              <option>北京市昌平区阳坊镇</option>
+              <option>北京市昌平区马池口镇</option>
+              <option>北京市昌平区东小口镇</option>
+              <option>北京市昌平区北七家镇</option>
+              <option>北京市昌平区兴寿镇</option>
+              <option>北京市昌平区崔村镇</option>
+              <option>北京市昌平区流村镇</option>
+              <option>北京市昌平区十三陵镇</option>
+              <option>北京市朝阳区建外街道</option>
+              <option>北京市朝阳区朝外街道</option>
+              <option>北京市朝阳区呼家楼街道</option>
+              <option>北京市朝阳区三里屯街道</option>
+              <option>北京市朝阳区左家庄街道</option>
+              <option>北京市朝阳区香河园街道</option>
+              <option>北京市朝阳区和平街街道</option>
+              <option>北京市朝阳区安贞街道</option>
+              <option>北京市朝阳区亚运村街道</option>
+              <option>北京市朝阳区望京街道</option>
+              <option>北京市朝阳区奥运村街道</option>
+              <option>北京市海淀区中关村街道</option>
+              <option>北京市海淀区学院路街道</option>
+              <option>北京市海淀区清河街道</option>
+              <option>北京市海淀区西三旗街道</option>
+              <option>北京市海淀区上地街道</option>
+              <option>北京市海淀区万寿路街道</option>
+              <option>北京市海淀区紫竹院街道</option>
+              <option>北京市海淀区四季青镇</option>
+              <option>北京市海淀区温泉镇</option>
+              <option>北京市海淀区苏家坨镇</option>
+              <option>北京市丰台区东铁匠营街道</option>
+              <option>北京市丰台区卢沟桥街道</option>
+              <option>北京市丰台区太平桥街道</option>
+              <option>北京市丰台区新村街道</option>
+              <option>北京市丰台区南苑街道</option>
+              <option>北京市丰台区方庄街道</option>
+              <option>北京市通州区北苑街道</option>
+              <option>北京市通州区中仓街道</option>
+              <option>北京市通州区新华街道</option>
+              <option>北京市通州区玉桥街道</option>
+              <option>北京市通州区梨园镇</option>
+              <option>北京市通州区宋庄镇</option>
+              <option>北京市通州区台湖镇</option>
+              <option>北京市顺义区胜利街道</option>
+              <option>北京市顺义区光明街道</option>
+              <option>北京市顺义区仁和镇</option>
+              <option>北京市顺义区后沙峪镇</option>
+              <option>北京市顺义区天竺镇</option>
+              <option>北京市大兴区兴丰街道</option>
+              <option>北京市大兴区林校路街道</option>
+              <option>北京市大兴区清源街道</option>
+              <option>北京市大兴区亦庄镇</option>
+              <option>北京市大兴区黄村镇</option>
+              <option>北京市昌平县XX街道</option>
+              <option>北京市昌平县XX镇</option>
+              <option>北京市昌平县XX乡</option>
+              <option>北京市昌平区昌平县XX街道</option>
+              <option>北京市昌平区昌平县XX镇</option>
+              <option>上海市浦东新区陆家嘴街道</option>
+              <option>上海市浦东新区潍坊新村街道</option>
+              <option>上海市浦东新区塘桥街道</option>
+              <option>上海市浦东新区花木街道</option>
+              <option>上海市浦东新区张江镇</option>
+              <option>上海市浦东新区金桥镇</option>
+              <option>上海市徐汇区湖南路街道</option>
+              <option>上海市徐汇区徐家汇街道</option>
+              <option>上海市徐汇区枫林路街道</option>
+              <option>上海市黄浦区南京东路街道</option>
+              <option>上海市黄浦区豫园街道</option>
+              <option>上海市静安区南京西路街道</option>
+              <option>上海市静安区静安寺街道</option>
+              <option>广东省广州市天河区五山街道</option>
+              <option>广东省广州市天河区员村街道</option>
+              <option>广东省广州市天河区石牌街道</option>
+              <option>广东省广州市天河区猎德街道</option>
+              <option>广东省广州市越秀区北京街道</option>
+              <option>广东省广州市越秀区东山街道</option>
+              <option>广东省深圳市南山区粤海街道</option>
+              <option>广东省深圳市南山区南山街道</option>
+              <option>广东省深圳市南山区西丽街道</option>
+              <option>广东省深圳市福田区华强北街道</option>
+              <option>广东省深圳市福田区莲花街道</option>
+              <option>浙江省杭州市西湖区西溪街道</option>
+              <option>浙江省杭州市西湖区翠苑街道</option>
+              <option>浙江省杭州市西湖区古荡街道</option>
+              <option>浙江省杭州市余杭区仓前街道</option>
+              <option>浙江省杭州市滨江区长河街道</option>
+              <option>四川省成都市武侯区浆洗街街道</option>
+              <option>四川省成都市武侯区火车南站街道</option>
+              <option>四川省成都市锦江区春熙路街道</option>
+              <option>四川省成都市高新区桂溪街道</option>
+              <option>湖北省武汉市武昌区水果湖街道</option>
+              <option>湖北省武汉市武昌区中南路街道</option>
+              <option>湖北省武汉市洪山区关山街道</option>
+              <option>湖北省武汉市江汉区新华街街道</option>
+              <option>江苏省南京市鼓楼区湖南路街道</option>
+              <option>江苏省南京市鼓楼区宁海路街道</option>
+              <option>江苏省南京市玄武区梅园新村街道</option>
+              <option>江苏省南京市建邺区沙洲街道</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>联系邮箱</span>
+            <input type="email" name="email" value="linyuan@example.com" autocomplete="email" />
+          </label>
+
+          <section class="phone-section" aria-labelledby="phone-title">
+            <div class="phone-head">
+              <h2 id="phone-title">手机号</h2>
+              <strong id="phoneFormatted" aria-live="polite">138 0013 8000</strong>
+            </div>
+
+            <input
+              id="phoneSlider"
+              class="phone-slider"
+              type="range"
+              min="13000000000"
+              max="19999999999"
+              step="1"
+              value="13800138000"
+              aria-label="手机号滑块"
+            />
+
+            <div class="slider-labels" aria-hidden="true">
+              <span>13000000000</span>
+              <span>19999999999</span>
+            </div>
+
+            <input id="phoneValue" type="hidden" name="phone" value="13800138000" />
+          </section>
+
+          <div class="captcha-row">
+            <label class="field required">
+              <span>验证码</span>
+              <input type="text" name="captcha" placeholder="请输入短信验证码" inputmode="numeric" />
+            </label>
+            <button class="captcha-button" id="captchaButton" type="button">获取验证码</button>
+          </div>
+
+          <label class="check-row">
+            <input type="checkbox" checked />
+            <span>我确认以上信息真实有效。</span>
+          </label>
+
+          <div class="form-actions">
+            <button class="secondary" type="button">取消</button>
+            <button class="primary" type="submit">提交</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
