@@ -74,12 +74,23 @@ const updatePhone = () => {
   const progress = ((current - min) / (max - min)) * 100;
 
   formatted.textContent = formatPhone(current);
+  formatted.classList.remove("is-empty");
   hiddenValue.value = String(Math.round(current));
   slider.style.setProperty("--fill", `${progress}%`);
 };
 
+const initPhoneSlider = () => {
+  const min = Number(slider.min);
+  const max = Number(slider.max);
+  const current = Number(slider.value);
+  const progress = ((current - min) / (max - min)) * 100;
+
+  hiddenValue.value = "";
+  slider.style.setProperty("--fill", `${progress}%`);
+};
+
 slider.addEventListener("input", updatePhone);
-updatePhone();
+initPhoneSlider();
 
 genderInputs.forEach((input) => {
   input.addEventListener("change", () => {

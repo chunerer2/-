@@ -259,6 +259,10 @@ select {
   font-weight: 400;
 }
 
+.phone-head strong.is-empty {
+  color: var(--muted);
+}
+
 .phone-slider {
   grid-column: 2;
   width: 100%;

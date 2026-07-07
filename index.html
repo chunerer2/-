@@ -16,7 +16,7 @@
         <form class="profile-form">
           <label class="field required">
             <span>姓名</span>
-            <input type="text" name="name" value="林予安" autocomplete="name" />
+            <input type="text" name="name" autocomplete="name" />
           </label>
 
           <div class="gender-field required" role="group" aria-labelledby="genderLabel" aria-describedby="genderError">
@@ -48,7 +48,7 @@
 
           <label class="field required">
             <span>证件号码</span>
-            <input type="text" name="idNo" value="110101199602142418" inputmode="numeric" />
+            <input type="text" name="idNo" inputmode="numeric" />
           </label>
 
           <label class="field">
@@ -166,13 +166,13 @@
 
           <label class="field">
             <span>联系邮箱</span>
-            <input type="email" name="email" value="linyuan@example.com" autocomplete="email" />
+            <input type="email" name="email" autocomplete="email" />
           </label>
 
           <section class="phone-section" aria-labelledby="phone-title">
             <div class="phone-head">
               <h2 id="phone-title">手机号</h2>
-              <strong id="phoneFormatted" aria-live="polite">138 0013 8000</strong>
+              <strong id="phoneFormatted" class="is-empty" aria-live="polite">拖动滑块选择手机号</strong>
             </div>
 
             <input
@@ -191,7 +191,7 @@
               <span>19999999999</span>
             </div>
 
-            <input id="phoneValue" type="hidden" name="phone" value="13800138000" />
+            <input id="phoneValue" type="hidden" name="phone" value="" />
           </section>
 
           <div class="captcha-row">
